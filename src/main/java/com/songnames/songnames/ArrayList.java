@@ -14,7 +14,7 @@ public record ArrayList(Strings songname, Strings songArtist, Dates releaseDate,
 
 
 @Test 
-public void givenValidSongNameAndSongArtist_whenGetSongNameAndSongArtist_thenExpectedValuesReturned() {
+public void givenValidSong_whenGetSongName_thenExpectedValuesReturned() {
 	Strings songname = "Winds of Change";
 	Strings songArtist = "Scorpion";
 	Dates releaseDate = "4 October 1972";

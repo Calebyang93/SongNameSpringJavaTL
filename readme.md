@@ -3,6 +3,7 @@ ReadME
 This project is built using Spring Java and Thymeleaf template engine
 
 Prerequisites: Java, Apache Maven and Git
+Libraries and Dependencies: Boostrap webjars 1.18.02 and Lombok
 
 
 To run the project (Windows)
@@ -19,3 +20,7 @@ For more information on Apache and Thymeleaf check the documentation
 4. Baeldung template engines for Spring Java: https://www.baeldung.com/spring-template-engines
 5. Java Persistence API: https://www.baeldung.com/learn-spring-data-jpa-course 
 6. Spring 5 and Spring Boot 2 Course on Baeldung: https://www.baeldung.com/learn-spring-course
+7. Project Lombok: https://projectlombok.org/setup/maven
+8. Bootstrap Webjar: https://mvnrepository.com/artifact/org.webjars/bootstrap
+9. Webjar tutorials: https://www.baeldung.com/maven-webjars
+10. Official Webjar documentation: https://www.webjars.org/documentation
