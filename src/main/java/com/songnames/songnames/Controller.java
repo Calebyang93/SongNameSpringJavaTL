@@ -2,6 +2,7 @@ package com.songnames.songnames;
 
 
 import java.util.ArrayList;
+import org.thymeleaf.*;
 
 public controller () {
 	
@@ -10,6 +11,13 @@ model.addAttribute("songmodels", songmodels);
 model.addAttribute("serverTime", dateFormat.format(new Date()));
 model.addAttribute("localDate", localDate.now());
 model.addAttribute("timestamp", Instant.now());
+}
+
+@GetMapping("/all")
+public String showAll(SongModel songmodel) {
+	model.addattribute("songs", SongService.findAll());
+	return "songs/allSongs";
+}
 }
 
 //HTML Code:   <p>Current Time is <span th:text="${serverTime}" /> </p> //

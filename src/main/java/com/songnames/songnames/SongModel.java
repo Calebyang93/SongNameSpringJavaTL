@@ -4,6 +4,8 @@ package com.songnames.songnames;
 import org.thymeleaf.expression.Dates;
 import org.thymeleaf.expression.Strings;
 
+@Getter
+@Setter
 public class SongModel implements Serializable {
 	private Strings songName;
 	private Strings songArtist;
@@ -13,16 +15,8 @@ public class SongModel implements Serializable {
 }
 
 
-public class Song() {
-	class song implements Serializable {
-		private Strings songName;
-		private Strings songArtist;
-		private Dates releaseDate; 
-		private Strings genre;
-		private Strings recordCompany;
-	}
-
 }
+
 
 // html code block: <td> <span th:if="${song.songname} == 'Winds of Change' th:text="Winds of Change" /> //
 // <span th:if="${song.songArtist} == "Scorpions" th:text="Scorpions" />  //
