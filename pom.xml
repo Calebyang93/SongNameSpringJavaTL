@@ -31,9 +31,32 @@
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.test</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<groupId>org.junit.vintage</groupId>
+				<artifactId>junit-vintage-engine</artifactId>
+			</exclusions>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.booot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+			<groupId>mySql</groupId>
+			<artifactId>MySql-Connector-Test</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
